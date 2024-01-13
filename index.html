@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de texto em áudio</title>
+  <script src="public/dist/main.js" defer></script>
+  <link rel="stylesheet" href="public/style/index.css">
+</head>
+<body>
+  <main>
+    <h1>Conversor de texto em áudio</h1>
+    <form>
+      <textarea id="text" rows="4"></textarea>
+      <select id="idiomas" required>
+        <option selected="true" disabled="disabled" value="">Selecione o idioma de entrada</option>
+        <option value="pt-PT">Português</option>
+        <option value="de-DE">Alemão</option>
+        <option value="fr-FR">Francês</option>
+        <option value="en-GB">Inglês</option>
+        <option value="es-ES">Espanhol</option>
+        <option value="ja-JP">Japonês</option>
+      </select>
+      <select id="select" required>
+        <option selected="true" disabled="disabled" value="">Selecione uma voz</option>
+      </select>
+      <div>
+        <p>Volume</p>
+          <input type="range" id="volume" max="100" required>
+          <span id="span-volume">15</span>
+      </div>
+      <button>Converter</button>
+    </form>
+  </main>
+</body>
+</html>

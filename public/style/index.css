@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #540005;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+main {
+  background-color: white;
+  width: 90%;
+  height: 38%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+form {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 90%;
+  font-size: 15px;
+}
+
+select {
+  width: 100%;
+  height: 20%;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+form div {
+  display: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+button {
+  width: 50%;
+  height: 20%;
+  border: none;
+  border-radius: 5px;
+  background-color: #540005;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 360px) {
+  main {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 23px;
+    margin-top: 30px;
+  }
+
+  textarea {
+    width: 95%;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    height: 38%;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    width: 45%;
+    height: 43%;
+  }
+  
+  textarea {
+    width: 97%;
+  }
+
+  form div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div input {
+    width: 75%;
+  }
+}
+
+@media (min-height: 844px) {
+  main {
+    height: 30%;
+  }
+
+  form {
+    gap: 20px;
+  }
+}
+
+@media (min-height: 1024px) {
+  main {
+    height: 25%;
+  }
+}
+
+@media (min-height: 1180px) {
+  main {
+    height: 23%;
+  }
+}
